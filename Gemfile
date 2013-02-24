@@ -8,6 +8,7 @@ gem 'pg', '0.12.2'
 
 group :development, :test do
   gem 'rspec-rails'
+  gem 'guard-rspec'
 end
 
 # Gems used only for assets and not required
@@ -26,6 +27,13 @@ gem 'jquery-rails'
 
 group :test do
   gem 'capybara', '1.1.2'
+  # linux dependent gems for Guard
+  gem 'rb-inotify', '~> 0.8.8'
+  gem 'libnotify'
+  
+  # Spork
+  gem 'guard-spork', '~> 0.3.2'
+  gem 'spork', '~> 0.9.0'
 end
 
 #group :production do
