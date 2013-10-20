@@ -27,6 +27,9 @@ end
 
 gem 'jquery-rails'
 
+# Bcrypt (for password Hashing)
+gem 'bcrypt-ruby'
+
 group :test do
   gem 'capybara', '1.1.2'
   # linux dependent gems for Guard
